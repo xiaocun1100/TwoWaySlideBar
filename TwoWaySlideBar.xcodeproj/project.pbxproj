@@ -13,9 +13,14 @@
 		5A65A13124751FA500C4430E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A65A13024751FA500C4430E /* Assets.xcassets */; };
 		5A65A13424751FA500C4430E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A65A13324751FA500C4430E /* Preview Assets.xcassets */; };
 		5A65A13724751FA500C4430E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A65A13524751FA500C4430E /* LaunchScreen.storyboard */; };
+		5A65A13F2475209E00C4430E /* TwoWaySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A13E2475209E00C4430E /* TwoWaySliderView.swift */; };
+		5A65A14324762BE900C4430E /* UIView+SCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A65A14224762BE900C4430E /* UIView+SCLayout.m */; };
+		E5BA808AB02524BFECB16984 /* Pods_TwoWaySlideBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A966DADB865362E1CB8D58D /* Pods_TwoWaySlideBar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A966DADB865362E1CB8D58D /* Pods_TwoWaySlideBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoWaySlideBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5265713F30C295B32366A117 /* Pods-TwoWaySlideBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWaySlideBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWaySlideBar/Pods-TwoWaySlideBar.release.xcconfig"; sourceTree = "<group>"; };
 		5A65A12724751FA000C4430E /* TwoWaySlideBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoWaySlideBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A65A12A24751FA000C4430E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A65A12C24751FA000C4430E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		5A65A13324751FA500C4430E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A65A13624751FA500C4430E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A65A13824751FA500C4430E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A65A13E2475209E00C4430E /* TwoWaySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWaySliderView.swift; sourceTree = "<group>"; };
+		5A65A14024761F2800C4430E /* TwoWaySlideBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoWaySlideBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A65A14124762BE900C4430E /* UIView+SCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SCLayout.h"; sourceTree = SOURCE_ROOT; };
+		5A65A14224762BE900C4430E /* UIView+SCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCLayout.m"; sourceTree = SOURCE_ROOT; };
+		A8E1E9B094AB33B3BA413D45 /* Pods-TwoWaySlideBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoWaySlideBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoWaySlideBar/Pods-TwoWaySlideBar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5BA808AB02524BFECB16984 /* Pods_TwoWaySlideBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084C1611B7912967A5961F4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8E1E9B094AB33B3BA413D45 /* Pods-TwoWaySlideBar.debug.xcconfig */,
+				5265713F30C295B32366A117 /* Pods-TwoWaySlideBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3EDB5BFC7C196D71B2BB1DAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A966DADB865362E1CB8D58D /* Pods_TwoWaySlideBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A65A11E24751F9F00C4430E = {
 			isa = PBXGroup;
 			children = (
 				5A65A12924751FA000C4430E /* TwoWaySlideBar */,
 				5A65A12824751FA000C4430E /* Products */,
+				084C1611B7912967A5961F4B /* Pods */,
+				3EDB5BFC7C196D71B2BB1DAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,9 @@
 		5A65A12924751FA000C4430E /* TwoWaySlideBar */ = {
 			isa = PBXGroup;
 			children = (
+				5A65A14124762BE900C4430E /* UIView+SCLayout.h */,
+				5A65A14224762BE900C4430E /* UIView+SCLayout.m */,
+				5A65A13E2475209E00C4430E /* TwoWaySliderView.swift */,
 				5A65A12A24751FA000C4430E /* AppDelegate.swift */,
 				5A65A12C24751FA000C4430E /* SceneDelegate.swift */,
 				5A65A12E24751FA000C4430E /* ContentView.swift */,
@@ -63,6 +96,7 @@
 				5A65A13524751FA500C4430E /* LaunchScreen.storyboard */,
 				5A65A13824751FA500C4430E /* Info.plist */,
 				5A65A13224751FA500C4430E /* Preview Content */,
+				5A65A14024761F2800C4430E /* TwoWaySlideBar-Bridging-Header.h */,
 			);
 			path = TwoWaySlideBar;
 			sourceTree = "<group>";
@@ -82,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A65A13B24751FA500C4430E /* Build configuration list for PBXNativeTarget "TwoWaySlideBar" */;
 			buildPhases = (
+				3B73A14DC41196297525D863 /* [CP] Check Pods Manifest.lock */,
 				5A65A12324751FA000C4430E /* Sources */,
 				5A65A12424751FA000C4430E /* Frameworks */,
 				5A65A12524751FA000C4430E /* Resources */,
+				534BB4B054B83AEE711254AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -141,6 +177,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B73A14DC41196297525D863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwoWaySlideBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		534BB4B054B83AEE711254AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwoWaySlideBar/Pods-TwoWaySlideBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwoWaySlideBar/Pods-TwoWaySlideBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A65A12324751FA000C4430E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -148,6 +233,8 @@
 			files = (
 				5A65A12B24751FA000C4430E /* AppDelegate.swift in Sources */,
 				5A65A12D24751FA000C4430E /* SceneDelegate.swift in Sources */,
+				5A65A13F2475209E00C4430E /* TwoWaySliderView.swift in Sources */,
+				5A65A14324762BE900C4430E /* UIView+SCLayout.m in Sources */,
 				5A65A12F24751FA000C4430E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +369,7 @@
 		};
 		5A65A13C24751FA500C4430E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E1E9B094AB33B3BA413D45 /* Pods-TwoWaySlideBar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,8 +380,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jxc.TwoWaySlideBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwoWaySlideBar/TwoWaySlideBar-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +391,7 @@
 		};
 		5A65A13D24751FA500C4430E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5265713F30C295B32366A117 /* Pods-TwoWaySlideBar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,8 +402,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jxc.TwoWaySlideBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TwoWaySlideBar/TwoWaySlideBar-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
